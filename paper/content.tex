@@ -1,51 +1,80 @@
-% status: 0
-% chapter: TBD
+% THIS IS SIGPROC-SP.TEX - VERSION 3.1
+% WORKS WITH V3.2SP OF ACM_PROC_ARTICLE-SP.CLS
+% APRIL 2009
+%
+% It is an example file showing how to use the 'acm_proc_article-sp.cls' V3.2SP
+% LaTeX2e document class file for Conference Proceedings submissions.
+% ----------------------------------------------------------------------------------------------------------------
+% This .tex file (and associated .cls V3.2SP) *DOES NOT* produce:
+%       1) The Permission Statement
+%       2) The Conference (location) Info information
+%       3) The Copyright Line with ACM data
+%       4) Page numbering
+% ---------------------------------------------------------------------------------------------------------------
+% It is an example which *does* use the .bib file (from which the .bbl file
+% is produced).
+% REMEMBER HOWEVER: After having produced the .bbl file,
+% and prior to final submission,
+% you need to 'insert'  your .bbl file into your source .tex file so as to provide
+% ONE 'self-contained' source file.
+%
+% Questions regarding SIGS should be sent to
+% Adrienne Griscti ---> griscti@acm.org
+%
+% Questions/suggestions regarding the guidelines, .tex and .cls files, etc. to
+% Gerald Murray ---> murray@hq.acm.org
+%
+% For tracking purposes - this is V3.1SP - APRIL 2009
+
+\documentclass{acm_proc_article-sp}
+
+\begin{document}
 
 \title{IBM Cloud}
+%\subtitle{[Telemedicine, Personal Monitors, and Privacy Issues]}
+
+\numberofauthors{1} 
+\author{
+\alignauthor
+Bruce Walker\titlenote{MS Data Science Student}\\
+       \affaddr{Indiana University}\\
+       %\affaddr{Phoenix, AZ}\\
+       \email{brucwalk@iu.edu}\\
+} 
+\date{20 March,2018}
 
 
-\author{Bruce Walker}
-\orcid{%}
-\affiliation{%
-  \institution{Indiana University}
-  \city{Bloomington} 
-  \state{Indiana} 
-}
-\email{brucwalk@iu.edu}
-
-
-% The default list of authors is too long for headers}
-\renewcommand{\shortauthors}{G. v. Laszewski}
-
-
+\maketitle
 \begin{abstract}
 
 In 2017, IBM fully committed to cloud computing. IBM BlueMix
 is now IBM Cloud. The changes go far beyond the name. The new 
-platform gives IBM a new, singular way to engage customers 
-\cite{hid-sp18-525-cloud}. Now, services are available on public or 
+platform gives IBM a new, singular way to engage customers. Now, services are available on public or 
 private clouds, with added capabilities, including database, 
-artificial intelligence, and blockchain\cite{hid-sp18-525-cloud}.
+artificial intelligence, and blockchain.
+
 In IBM Cloud, many popular services and applications are 
 available, with public or private access. No cloud presence 
 is possible without a strong network. IBM has included an 
 industry leading level of network capabilities. To ensure 
-security, access, and redundancy, IBM operates 60 data centers 
-\cite{hid-sp18-525-cloud}.
+security, access, and redundancy, IBM operates 60 data centers.
+
 The IBM Cloud connects data science and other tools, such as 
-VMware, SAP, Spark, Jupyter, R, and many others 
-\cite{hid-sp18-525-cloud}. Both open source and proprietary 
+VMware, SAP, Spark, Jupyter, R, and many others. Both open source and proprietary 
 applications and services are part of IBM Cloud.
-As an industry leader in blockchain, IBM’s use of the 
+As an industry leader in blockchain, the 
 technology is featured in IBM Cloud. Blockchain is becoming 
-the most known product IBM offers, and it is a major componet
-of IBM Cloud \cite{hid-sp18-525-cloud}.
+the most known product IBM offers, and it is a major component
+of IBM Cloud. 
+\end{abstract}
 
+% A category with the (minimum) three required fields
+%\category{H.4}{Information Systems Applications}{Miscellaneous}
+%A category including the fourth, optional field follows...
 
-\keywords{hid-sp18-525, 525, IBM, Cloud}
+%\terms{Theory}
 
-
-\maketitle
+\keywords{hid-sp18-525, 525, IBM, Cloud} % NOT required for Proceedings
 
 \section{Introduction}
 
@@ -55,218 +84,78 @@ like never before.  In order to survive and thrive, IBM has made
 numerous changes and adaptations have been necessary to achieve
 survival.  The latest of those changes has been to an important
 product--IBM BlueMix.  To thrive in the current computing 
-environment, BlueMix has become IBM Cloud \cite{hid-sp18-525-cloud}.
+environment, BlueMix has become IBM Cloud \cite{hid-sp18-525-cloud}. Cloud is a concept that has recently become popular.  With the advent of cloud, many companies have moved operations to the cloud, in order to embrace the new world of data and computing.  IBM has taken steps to enter this world, with the latest steps being the change from BlueMix, to IBM Cloud.  IBM offers the cloud on several different levels and with options to suit any size business.  
 
-\section{What is the "Cloud"?}
+This paper focuses on IBM Cloud, and includes  What is the Cloud, from IBM.  Why a move to the cloud is necessary discusses the necessity, when considering that most businesses will have a cloud presence, soon.  Services beyond the cloud are also provided by IBM, such as data analytics.
+  
+
+\section{What is the Cloud?}
 
 IBM Cloud includes Infrastructure as a Service (IaaS), Platform 
 as a Service (PaaS), and Software as a Service (SaaS).  It also 
 includes a comprehensive catalogue of cloud services, such as, 
 Watson and Blockchain, that can be easily integrated with the 
-PaaS and IaaS, that can help with building modular applications.  
+PaaS and IaaS, that can help with building modular applications. 
+
 IBM Cloud is built for any sized business from small to very large, 
 to easily consume and manage.  There are built-in governance 
 capabilities that allow a company to easily manage cloud 
-consumption and billing.  IBM takes securiry very seriously, 
+consumption and billing.  IBM takes security very seriously, 
 and has instituted very stringent security and compliance based 
 rules into the architecture. IBM's Cloud resides in over 60 
 data centers, and maintains a global network that connects the data 
-centers and additional points of presence.  IaaS, in the IBM Cloud,
+centers and additional points of presence.
+
+IaaS, in the IBM Cloud,
 includes your choice of virtual servers, for various operating systems
 and baremetal servers.  PaaS offers the ability to build applications
 in a Cloud Foundry environment or IBM Cloud Container Service, for 
-the ability to build Docker Containers for application placement.  
+the ability to build Docker Containers for application placement.
+
 SaaS in IBM Cloud is rapidly growing as IBM continues migrate their
 software applications from an on premise licensing model, to a cloud-
-based comsumption model. 
-
-\section{Why the "Cloud"?}
-
-In Figure~\ref{f:fly} we show a fly. Please note that because we use
-just columwidth that the size of the figure will change to the
-columnwidth of the paper once we change the layout to final. Changing
-the layout to final should not be done by you. All figures will be
-listed at the end.  Please do not use phrases such as \textit{shown in
-  the figure below}. Instead use such as shown in Figure~\ref{f:fly}.
-
-\begin{figure}[!ht]
-  \centering\includegraphics[width=\columnwidth]{../../hid-sample/tex/images/fly.pdf}
-  \caption{Example caption}\label{f:fly}
-\end{figure}
-
-To avoid copying the example figure in each hid directory, we actually
-import it from the hid-sample directory. Lets assume you have a figure
-in the image directory called myfigure.pdf. You can than replace the
-line in the example with
-
-\begin{verbatim}
-\centering\includegraphics[width=\columnwidth]{images/myfigure.pdf}
-\end{verbatim}
-
-In case you use png than you must have a png that is at least 300dpi
-(find out what that means and how to do that) and use 
-
-\begin{verbatim}
-\centering\includegraphics[width=\columnwidth]{images/myotehrfigure.png}
-\end{verbatim}
-
-When modifying the example, please do not check in the images from the
-examples into your images directory as you will not need them for your
-paper. Instead use images that you like to include. If you do not have
-any images, do not palce anything in the images folder. However most
-technologies could benefit for one image. Make sure you do not
-plagiarize the image. Find out from the hand book how to do that. Any
-plagiarism of images will result that we return the paper without
-review as you have not understood how plagiarism works.
-
-\section{Tables}
-
-In case you need to create tables, you can do this with online tools
-(if you do not mind sharing your data) such as
-\url{https://www.tablesgenerator.com/} or other such tools (please
-google for them). They even allow you to manage tables as CSV.
-
-or generate them by hand while using the provided template in Table
-\ref{t:mytable}. Note that
-the caption is before the tabular environment.
-
-\begin{table}[htb]
-\centering
-\caption{My caption}
-\label{t:mytabble}
-\begin{tabular}{lll}
-1 & 2 & 3 \\
-\toprule
-4 & 5 & 6 \\
-7 & 8 & 9
-\end{tabular}
-\end{table}
-
-\section{Quotes}
-
-Do not use double quotes \verb|"| but use \LaTeX\ ``quotes''. Quotes
-{\bf MUST} not be used to highlight works. Quotes are {\bf STRICTLY}
-used for quoting text from sources with citation following. If we find
-a quote that is not followed by a citation we will return the paper
-without review.
-
-\section{Labels}
-
-Do not use actual numbers in the taxt after you write for example
-Figure 1 use the ref for the figure while using its label. In our
-example it is Figure~\ref{f:fly} and Table Figure~\ref{t:mytabble}.
-See the source for the example.
-
-\section{Footnotes}
-
-Footnotes must be avoided in papers. All URLs must be included as full
-references and citations and used with the \verb|\cite| command
-\footnote{do not use footnotes}. You {\bf must} not use urls in the
-text or paper.
-
-\section{Plagiarism}
-
-The class includes a section about plagiarism which you must adhere
-to. Copying text without proper citation is considered cheating and we
-will assign the grade ``F'' for the paper if we find you do it. It is
-in your responsibility to make sure plagiarism does not occur. Please
-be aware that our checks are better than the once provided by turnitin
-or other online checkers. Excuses such as ``I did not have time'' or
-``I forgot'' can not apply as you have enough time to prepare the
-paper and must not forget. 
-
-\section{Check}
-
-make sure just as in previous assignments that you check your paper
-with chktex and lacheck. Fix the errors that you see. Some of the
-errors may be ok, but in general make sure you address all of them. If
-in doubt work with the TA. Simply use
-
-\begin{verbatim}
-make check
-\end{verbatim}
-
-We include in the handbook a list with common issues that we see when
-students submit papers. One particular important issue is not to use
-the underscore in bibtex labels. It is your responsibility to check
-the paper for the issues indicated.
-
-To check bibliographies simply use
-
-\begin{verbatim}
-pdflatex report
-bibtex report
-\end{verbatim}
-
-You will see the errors and warning son the screen address them
-
-TA's will in addition use a special test checking for additional
-format issues such as detecting if you used labels and refs for
-floats. You are welcome to also try this test, but we provide it
-without explanation as no explanation is needed since if you followed
-the instructions on floats there should be no issues. If you like to
-do that test, you can use  
-
-\begin{verbatim}
-make check-ta
-\end{verbatim}
-
-\section{Convenient Setup}
-
-If you do not have already a paper dir in your repository, here is a
-way to create one. Replace the hid-sp18-000 with your hid.
-
-\begin{verbatim}
-export HID=hid-sp18-000
-mkdir -p ~/github/cloudmesh-community
-cd ~/github/cloudmesh-community
-git clone https://github.com/cloudmesh-community/hid-sample.git
-git clone https://github.com/cloudmesh-community/$HID.git
-\end{verbatim}
-
-Next copy the paper example
-
-\begin{verbatim}
-cp -r hid-sample/paper $HID
-cd $HID
-git add paper
-git commit -m "add the paper directory" paper
-git push
-\end{verbatim}
-
-Make sure there is no \verb|/| behind the paper in the cp command or you mess up the
-copy process.
+based consumption model \cite {hid-sp18-525-overview}.
 
 
-\section{Creating the PDF}
+\section{Why Cloud}
 
-The PDF\ can be created simply with 
+As society becomes more connected, the move to the cloud is essential to  organizational success.  IBM is a leader in that transformation.  
+The development of services to meet the needs of Internet of Things (IoT), for example, is just one area of IBM specialization. The collection and analysis of many myriad of data streams from sensors in manufacturing equipment, on warehouse employees, and tags on shipping containers, allow the ability to proactively act on the data \cite{hid-sp18-525-winning}.  The cloud enables to easily collect, manage, and maintain all of these devices, seamlessly. 
 
-\begin{verbatim}
-make clean
-\end{verbatim}
+IoT is one of many emerging technologies that the cloud helps to make easily consumable. Some other emerging technologies enabled by the cloud are Artificial Intelligence, Cognitive, and Blockchain \cite{hid-sp18-525-winning}.  All of these solutions are available in the IBM Cloud, and can be easily deployed for both production and non production environments.  According to IBM, by 2020, 90 percent of of business models may be driven by the cloud with a global cloud market valuation of 250 billion dollars  \cite{hid-sp18-525-winning}.
 
-
-
-{\bf UNDER NO CIRCUMSTANCES ARE YOU ALLOWED TO CHECK IN YOUR PDF OR
-  TEMPORARY LATEX FILES INTO GITHUB. GIT NEEDS TO STAY CLEAN AND ONLY
-  CONTAIN THE SOURCES.}
-
-We will deduct points if you do violate this.
-
-\section{Conclusion}
-
-Put here an conclusion. Conclusion and abstracts must not have any
-citations in the section.
+Beyond emerging technology availability in the cloud, there are several additional benefits that companies can achieve.  The ability for companies to use technology to differentiate and be the disrupter is often constrained by a company's own information technology (IT) organizations.  IT departments, historically, want to control everything from infrastructure to the building of applications, along with the consumption of data.  Cloud offers a different way to approach technology, by offering IT departments the ability to provide governed, self-service technology to the remainder of the business.  This allows the various departments within a company to build and scale business relevant applications under IT's guidance and governance, but without the long time constraints that are typically in place. Governed self-service IT will allow companies to innovate and adopt emerging technologies, at a much faster pace, with the goal of leading or remaining competitive \cite{hid-sp18-525-overview}.
 
 
-\begin{acks}
+\section{Offerings}
 
-  The authors would like to thank Dr.~Gregor~von~Laszewski for his
-  support and suggestions to write this paper.
+IBM will help drive business models with several cloud offerings.  Some of the IBM Cloud offerings include the IBM Public Cloud, and the IBM Cloud Private \cite{hid-sp18-525-winning}.  
 
-\end{acks}
+The IBM Public Cloud, formerly called BlueMix is the most widely used IBM cloud platform and is available for all customers to consume, even, in low quantities, at no charge. In larger quantities, IBM Public Cloud is billed on a usage basis, with customer ability to prepay for services on an annual basis for discounts.  
 
-\bibliographystyle{ACM-Reference-Format}
-\bibliography{report} 
+IBM Cloud Private is a private cloud offering that can be deployed to a customer owned data center on customer owned hardware and infrastructure.  This allows customers the choice of maintaining control, especially for those customers that require specific security, compliance, and or governance adherence.  IBM Cloud Private offers customers access to similar services and solutions as IBM Public Cloud, however, it also allows customers the ability to easily deploy other IBM solutions, that would typically reside within customer data centers, such as integration and application development platforms \cite{hid-sp18-525-winning}.  
 
+IBM offers the ability to easily integrate the IBM Cloud Private platform with any public cloud platform, including IBM Public Cloud, Amazon, and Microsoft Azure, among many others \cite{hid-sp18-525-winning}.  This is especially important as most companies will see value and need to adopt solutions from many different cloud providers, as they build out their hybrid cloud infrastructures.  Even IBM realizes that it is unrealistic and naive to think that a company would only consume solutions or services from a single cloud provider.    
+
+\section{Beyond Cloud}
+
+Cloud providers, such as IBM, offer cloud as the platform to consume many different offerings and solutions, however, there is still the data that is generated by these services that is the resource of intelligence of companies.  How companies use this data will be the differentiating factor in many cases, that will dictate customer success or disruption.
+
+IBM also offers solutions for customers who do not want to fully embrace the cloud.  For those customers, they may already have an on premise data center or other equipment.  IBM offers a hybrid cloud solution for those customers.  These customers can get the benefits of both worlds with IBM.  Local applications and equipment working in the Public or Private Cloud with IBM.  
+
+Hybrid cloud lowers the cost of ownership and can be more efficient.  And, because the customer still has some control, because of having local equipment in their own premise, a higher sense of satisfaction is possible, as well \cite{hid-sp18-525-hybrid}.  
+
+The extreme growth of data, which is enabled by cloud computing, has driven the need for data scientists with the ability to perform tasks like predictive and prescriptive analytics, along with machine learning and deep learning models against this data.  
+
+Using machine learning and deep learning models goes beyond what companies have typically analyzed.  It allows them to look at historical data, for example, in a different way, to help make predictions on what will happen in the future, versus just looking at the past.  It also allows a company to perform actions on these predictions and thus, the ability to comprehensively affect process efficiencies.  
+ 
+ \section{Conclusion}
+ IBM offers a large number of services, from software and platform as services, to private cloud access.  The offerings are scaleable for any size organization.  IBM has embraced the new world of data by developing enhanced methods of exploring and managing that data.  Data center development has been a vital part of IBM Cloud strategy.  Customers have the opportunity to house hardware in IBM data centers or just utilize the Public or Private Cloud.  Customer flexibility is a key aspect of IBM Cloud.  Cloud based exploration and management is a relatively new frontier, which IBM has endeavored to provide world class service.  With Watson, IBM offers the highest level of data exploration and management, including real time data processing.  Based on significant Cloud offerings, IBM is poised, as an industry leader in the cloud for decades to come, in continuation of a long, rich tradition of business excellence.
+ 
+ 
+\bibliographystyle{abbrv}
+\bibliography{hid-sp18-525}
+
+%\balancecolumns 
+
+\end{document}
