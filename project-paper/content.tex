@@ -10,39 +10,75 @@
 \date{ April 27, 2018}
 
 \maketitle 
+\section{Abstract}
+
+Orchestration is the new buzz word in organizational infrastructure.
+Companies are changing how they view and use applications.  The days
+of large, cumbersome applications, spread over the entire
+organization, are numbered.  A method of
+managing applications and information, from the smallest of local 
+office needs, to the largest of corporate needs, with much less 
+overhead than traditional applications was needed.  Kubernetes is that 
+platform.  
+
+
 
 \section{Introduction}
 
-Kubernetes is fast becoming the most influential cloud platform that
+There are many ways for organizations to structure their information
+technology environments.  Traditional methods would include software
+developers creating a large application and deploying it over the
+organiztion. It could have been deployed via a server or locally on
+any number of machines.  That is changing.  Kubernetes is fast 
+becoming the most influential orchestration platform that
 many have never heard of.  A recent development, it features power and
-flexibility to ensure a place in the future of cloud computing.  It is
+flexibility to ensure a place in the future of cloud computing.
+Developed by Google, Kubernetes is a relatively new technology.  It
+started in 2014 as an open source method of deploying and operating
+application containers.  Google had a long history of developing
+clusters and deploying applications on those clusters.  The resulting
+application, Kubernetes, allowed management of large clusters. It is
 a robust collection of processes, that are fast and dependable.  It is
-scaleable and adaptive. Kubernetes is a command line application, that
-can have GUI characteristics attached.  It essentially uses API's to
-describe and manage what applications are running in a container.
-\cite {hid-sp18-525-concept}
+scaleable and adaptive. Kubernetes is a container orchestration
+application, that can run in a variety of environment.  It essentially
+uses API's to describe and manage what applications are running in a 
+container.  \cite {hid-sp18-525-concept}
+
+
 
 \section{How it Works}
 
-Developed by Google, Kubernetes is a relatively new technology.  It
-started in 2014 as an open source method of deploying and operating
-application containers.  
-
-Methods of computing and computing applications have moved from large
-applications to VM's to containers.  Applications on computers require
+ 
+Based on the success of Google's research, Kubernetes was launched as
+an open source application.  From its inception, methods of computing 
+and computing applications have moved from large applications to VM's
+to containers.  Historically, applications on computers or servers, require
 large operating systems, that encompass the entire computer and
 require that every application be subject to their commands.  Should
 the operating system fail, all applications on the computer will also
 fail.   
 
-On the virtual machine, Kubernetes is installed by accessing an
+Kubernetes is different.  Essentially, it is a container environment,
+and microservices environment, and a cloud environment.  It can run on
+a laptop or desktop.  It is just as ready to run on a virtual machine
+in the cloud or even on bare metal servers.  Kubernetes
+has eight primary features, although it has numerous other features
+and functions.
+
+Kubernetes is a combination of numerous services.  It is a large scale
+computing platform, while it also performs microservices.  It is
+Platform as a Service (PaaS), while it is also not a PaaS. 
+
+Once a determination is made on what platform on which to run
+Kubernetes, configuring the right solution is next.  On the virtual 
+machine, Kubernetes is installed by accessing an
 outside site, like GitHub, to download the application.  There a
 number of options, when it comes to which application to install.
 Part of the variation is due to the particular version of virtual
 machine used to run Kubernetes.  Also, the use of a more convenient,
 and lighter form of Kubernetes, called Minikube is often used for a
 virtual machine, such as
-Ubuntu. https://kubernetes.io/docs/getting-started-guides/minikube/.
+Ubuntu \cite{minikube}. 
 It is a fast download and can access other Kubernetes options and
 APIs.  Even though it is local, it can still
 support~\cite{hid-sp18-525-concept}
@@ -79,6 +115,20 @@ machines, many aspects of their performance and behavior must be
 configured.  Drivers must be imported.  Minikube supports Kubernetes
 features, such as DNS, NodePorts, ConfigMaps and Secrets, etc.   
 
+\section{How to Get Started}
+
+Who
+
+What  
+
+When
+
+where
+
+Why
+
+How
+
 Kubernetes use of REST API's is the cornerstone of all Kubernetes activity.  
 
 
@@ -87,6 +137,21 @@ Kubernetes use of REST API's is the cornerstone of all Kubernetes activity.
 \TODO{PAPERS HAVE ALL URLS AS CITATIONS}
 
 \verb|Reference:  https://kubernetes.io/docs/tutorials/kubernetes-basics/explore-intro/|
+
+Who
+
+What  
+
+When
+
+where
+
+Why
+
+How
+
+
+
 
 Kubernetes has a hierarchical design.  At the lowest level are Pods.
 Generally, Pods are where application containers are placed.  Pods are
@@ -139,7 +204,7 @@ are available to perform as needed, without failure.  When a Pod is
 created, additional Pods maybe created, identically structured, in
 order to ensure availability of Pod functions~\cite{hid-sp18-525-service}.  
 
-\section{How to Get Started}
+
 
 Kubernetes is able to run on desktop and virtual machines.  In order
 to started on a Mac, Kubernetes is installed.  Thereafter, a container
@@ -149,28 +214,170 @@ each other~\cite{hid-sp18-525-service}.
 
 Downloading Kubernetes
 
-\TODO{IMAGES ARE NOT INCLUDED ACCORDING TO THE TEMPLATE WE PROVIDED}
+\subsection{Horizontal Scaling}
 
-\includegraphics[width=1\columnwidth]{images/install-docker.png}
+Kubernetes is a container-based environment, with pods as its default 
+unit. Pods communicate with each other. 
+
+Scale application up and down with a simple command...
+
+Who
+
+What  
+
+When
+
+where
+
+Why
+
+How
+
+\subsection{Service Discovery and Load Balancing}
+
+No need to modify your application to use an unfamiliar service
+discovery mechanism.  
+
+Who
+
+What  
+
+When
+
+where
+
+Why
+
+How
+
+\subsection{Self-healing}
+
+Who
+
+What  
+
+When
+
+where
+
+Why
+
+How
+
+\subsection{Service Discovery and Load Balancing}
+
+Who
+
+What  
+
+When
+
+where
+
+Why
+
+How
+
+\subsection{Automated Rollouts and Rollbacks}
+
+Who
+
+What  
+
+When
+
+where
+
+Why
+
+How
+
+\subsection{Secret and Configuration Management}
+
+Who
+
+What  
+
+When
+
+where
+
+Why
+
+How
+
+\subsection{Storage Orchestration}
+
+Who
+
+What  
+
+When
+
+where
+
+Why
+
+How
+
+\subsection{Batch Execution}
+
+Who
+
+What  
+
+When
+
+where
+
+Why
+
+How
+
+
+\subsection{Automatic Binpacking}
+
+Who
+
+What  
+
+When
+
+where
+
+Why
+
+How
+
+\cite{hid-sp18-525-auto}
+
+
 
 Kubernetes, and the applications it supports, are easily downloaded.
 Upon downloading, Docker can be layered on top of Kubernetes.   
 
 \section{What can you put in Kubernetes}
 
+Who
+
+What  
+
+When
+
+where
+
+Why
+
+How
+
 Although Docker is loaded onto a local machine, in these examples,
 cloud and virtual deployments are also available
 \cite{hid-sp18-525-docker}. 
 
-\TODO{IMAGES ARE NOT INCLUDED ACCORDING TO THE TEMPLATE WE PROVIDED}
 
-\includegraphics[width=\columnwidth]{images/install-docker.png}
 
-\includegraphics[width=\columnwidth]{images/install-docker2.png}
 
-\includegraphics[width=\columnwidth]{images/install-docker3.png}
 
-\includegraphics[width=\columnwidth]{images/install-docker4.png}
 
 
 
