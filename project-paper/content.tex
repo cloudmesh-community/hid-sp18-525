@@ -313,17 +313,13 @@ available for Microsoft Azure and AWS~\cite{concept}.
 
 \subsection{Self-healing}
 
-Who
-
-What  
-
-When
-
-where
-
-Why
-
-How
+Kubernetes employs a ReplicationController to manage Pods.  If too
+many exist, then the ReplicationController removes some.  If too few
+Pods exist to accomplish what is required, the ReplicationController
+will start more Pods.  Pods are replaced if they fail, if they are
+deleted, or if they are terminated.  A ReplicationController should be
+used, regardless of the number of Pods required.  Even one Pod should
+require ReplicationController involvement ~\cite{concept}.
 
 
 \subsection{Automated Rollouts and Rollbacks}
