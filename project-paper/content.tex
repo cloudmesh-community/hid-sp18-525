@@ -45,7 +45,7 @@ uses API's to describe and manage what applications are running in a
 container~\cite{concept}.
 
 \begin{figure}[!ht]
-\centering\includegraphics[width=\columnwidth]{images/kubernetes.png }~\cite{definition}.
+\centering\includegraphics[width=\columnwidth]{images/kubernetes.png}~\cite{definition}.
 \end{figure}
 
 \section{How it Works}
@@ -137,7 +137,7 @@ Once Kubernetes is installed on the virtual machine, it can be
 deployed.  Kubernetes must be configured in order to properly deploy
 and, for it to accept containers.  Once deployed, containers, with
 applications can be layered on top of Kubernetes.  Kubernetes can then
-create instances of the application ~\cite{concept}.
+create instances of the application~\cite{concept}.
 
 A cloud based option for available for Kubernetes use.  Cloud services 
 have joined in using Kubernetes due to the reliability and ability to
@@ -158,8 +158,8 @@ Kubernetes versions, for laptops, desktops, and virtual machines.
 One method of utilizing the command line involves using the command
 line tool kubectl.  Since Kubernetes is available on so many
 platforms, the kubectl commands vary, slightly.  With Ubuntu, is
-packaged as a snap application ~\cite{kubectl}.  Each platform has
-its own version of the kbectl install package.  macOS installs via
+packaged as a snap application~\cite{kubectl}.  Each platform has
+its own version of the kbectl install package.  MacOS installs via
 Homebrew.  Windows installs via Powershell Gallery or Chocolatey.
 Kuberntetes is also available via Goggle Cloud SDK\cite{kubectl}.\
 
@@ -186,17 +186,17 @@ computing system does.  Kubernetes does so with less computing
 overhead and more flexibility, however\cite{dash}.  Utilizing the
 operating system of the host means much less resource use than a
 virtual machine, which requires an entire operating system to engage
-when the virtual machine starts ~\cite{reasons}.  Containers are very
+when the virtual machine starts~\cite{reasons}.  Containers are very
 good at running internal functions and APIs, they are not generally
 good at managing numerous Containers scattered around the office or
 the globe.  This is where Kubernetes is most useful.  Kubernetes
 excels at deploying and scaling Containers and their applications.  It
-can ensure even workloads across the clusters ~\cite{reasons}.  In the
+can ensure even workloads across the clusters~\cite{reasons}.  In the
 current software environment, applications are tasked to run on VMs,
 bare metal, on premise servers, and cloud.  Designing a one size fits
 all application is near impossible, but Kubernetes allows for
 application development that can operate in any environment, due to
-containerized operations ~\cite{reasons}.  
+containerized operations~\cite{reasons}.  
 
 Applications are becoming modular.  That is, they are designed in
 pieces, which fit into any platform, creating the same function, with
@@ -281,7 +281,7 @@ The latest Kubernetes also allows for DaemonSets.  DaemonSets let the
 user assign some Nodes to always run specific Pods, which allows the
 running of a database.  It isn't perfect in that dynamic scheduling of
 Pods, as in StatefulSets, but the ability to schedule Pods is very
-helpful ~\cite{reasons}.
+helpful~\cite{reasons}.
 
 Some of the Kubernetes features give the user additional flexibility.  
 
@@ -319,7 +319,7 @@ Pods exist to accomplish what is required, the ReplicationController
 will start more Pods.  Pods are replaced if they fail, if they are
 deleted, or if they are terminated.  A ReplicationController should be
 used, regardless of the number of Pods required.  Even one Pod should
-require ReplicationController involvement ~\cite{concept}.
+require ReplicationController involvement~\cite{concept}.
 
 
 \subsection{Automated Rollouts and Rollbacks}
@@ -327,12 +327,12 @@ require ReplicationController involvement ~\cite{concept}.
 Kubernetes contains a deployment controller, which allows for Pod
 creation.  It also allows for the creation of replicas of the most
 recent configuration.  Deployments can be managed by use of the
-command line.  New Pods can be set to replicate ~\cite{concept}. A
+command line.  New Pods can be set to replicate~\cite{concept}. A
 deployment can also be set to rollback, automatically~\cite{concept}.  
 
 \subsection{Secret and Configuration Management}
 
-Kubernetes features objects called ' 'secret,' ' which hold passwords,
+Kubernetes features objects called \emph{secret}, which hold passwords,
 tokens, ssh keys, and other sensitive information.  Users can create
 secrets.  The system creates secrets, as well.  Some secrets are
 included in Kubernetes~\cite{concept}.  Kubectl allows creation of
