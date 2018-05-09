@@ -1,5 +1,22 @@
-% status: 0
+% status: 60
 % chapter: Container
+
+\def\paperstatus{60} % a number from 0-100 indicating your status. 100
+                % means completed
+\def\paperchapter{Container} % This section is typically a single keyword. from
+                   % a small list. Consult with theinstructors about
+                   % yours. They typically fill it out once your first
+                   % text has been reviewed.
+\def\hid{hid-sp18-525} % all hids of the authors of this
+                                % paper. The paper must only be in one
+                                % authors directory and all other
+                                % authors contribute to it in that
+                                % directory. That authors hid must be
+                                % listed first
+\def\volume{9} % the volume of the proceedings in which this paper is to
+           % be included
+
+\def\locator{\hid, Volume: \volume, Chapter: \paperchapter, Status: \paperstatus. \newline}
 
 \title{Report: Kubernetes and Containers}
 \author{Bruce Walker}
@@ -7,23 +24,29 @@
 %\affaddr{Phoenix, AZ}
 %\email{brucwalk@iu.edu}
  
-\date{April 27, 2018}
+%\date{April 27, 2018}
+
+
+
+\begin{abstract}
+
+  Orchestration is the new buzz word in organizational infrastructure.
+  Companies are changing how they view and use applications.  The days
+  of large, cumbersome applications, spread over the entire
+  organization, are numbered.  A method of managing applications and
+  information, from the smallest of local office needs, to the largest
+  of corporate needs, with much less overhead than traditional
+  applications was needed.  Kubernetes is that platform.
+
+\end{abstract}
 
 \maketitle 
-\section{Abstract}
 
-Orchestration is the new buzz word in organizational infrastructure.
-Companies are changing how they view and use applications.  The days
-of large, cumbersome applications, spread over the entire
-organization, are numbered.  A method of
-managing applications and information, from the smallest of local 
-office needs, to the largest of corporate needs, with much less 
-overhead than traditional applications was needed.  Kubernetes is that 
-platform.  
-
-
+\keywords{\locator\ Container}
 
 \section{Introduction}
+
+\TODO{Has issues with template}
 
 There are many ways for organizations to structure their information
 technology environments.  Traditional methods would include software
